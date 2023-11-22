@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Drowing.com</title>
+</head>
+<body style="width: 100%; height: 100vh;">
+    <section class="theMainSection">
+        <canvas style="width: 100%; height: 100%;"></canvas>
+        <article class="toolBox">
+            <div class="card p-2" style="width: 20rem; height: 100%">
+                <h2>Shapse</h2>
+                <div class=" d-flex align-items-center option">
+                    <button class="tool action" id="rectangle">
+                        <img src="./rectangular.png" alt="" class="imgShape">
+                    </button>
+                    <button class="tool" id="circle">
+                        <img src="./circle.png" alt="" class="imgShape">
+                    </button>
+                    <button class="tool" id="triangle">
+                        <img src="./triangle.png" alt="" class="imgShape">
+                    </button>
+                    <button>
+                        <input type="checkbox" id="fill-color" class="d-none">
+                        <label for="fill-color"><img src="./rectangle.png" alt="" class="imgShape"></label>
+                    </button>
+                </div>
+                <br>
+                <h2>Option</h2>
+                <div class=" d-flex align-items-center option">
+                    <button class="tool action" id="brush">
+                        <img src="./brush.png" alt="" class="imgShape">
+                    </button>
+                    <button class="tool" id="eraser">
+                        <img src="./eraser.png" alt="" class="imgShape">
+                    </button>
+                </div>
+                <br>
+                <div class="w-100 d-flex align-items-center gap-2">
+                    <div>
+                        <label for="color">
+                            <img src="./colours.png" alt="" style="width: 2rem;">
+                        </label>
+                        <input type="color" name="" id="color" class="d-none">
+                    </div>
+                    <input type="range" id="size-slider" class="w-100" min="1" max="30" value="5">
+                </div>
+                <br>
+                <div>
+                    <button style="font-size:1.1rem ;" class="mb-2 clearBtn" id="clear">Clear Canvas</button>
+                    <br>
+                    <button style="font-size:1.1rem ;" class="saveBtn" id="sevedBtn">Save as</button>
+                </div>
+            </div>
+        </article>
+
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

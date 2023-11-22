@@ -1,0 +1,43 @@
+html{
+    font-size: 62.5%;
+}
+
+.theMainSection{
+    height: 98vh !important;
+}
+
+.toolBox{
+    position: absolute;
+    top:3rem;
+    left: 2rem;
+    /* height: 20rem; */
+}
+
+.toolBox .card{
+    background-color: #fefefe;
+}
+
+.imgShape{
+    width: 2rem;
+}
+
+.card h2{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.toolBox .card button{
+    border : none;
+    outline: none;
+    width: 100%;
+    padding:.4rem 1rem;
+}
+
+.saveBtn{
+    background-color: rgb(12, 82, 152);
+    color: #fefefe;
+}
+
+.action{
+    background: #8dc6d9;
+}
